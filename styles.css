@@ -268,3 +268,23 @@ h2 em{font-style:normal;color:#7a8696}
 .quote-inputs{display:grid;grid-template-columns:1fr 1fr;gap:18px}.quote-inputs .field span{display:block;font-size:12px;font-weight:700;margin-bottom:8px}.quote-warning{background:#f5f7f9;border-left:3px solid #9fbd71;color:#546577;padding:13px 15px;font-size:11px;line-height:1.75;margin:19px 0 0}
 .quote-sidebar{display:flex;flex-direction:column;gap:10px;background:#0c1b31;color:#fff;border-radius:12px;padding:25px}.quote-sidebar>small{font-size:10px;color:#abbed2;font-weight:800;letter-spacing:.1em}.quote-sidebar>strong{font:700 20px var(--font-display);letter-spacing:-.04em}.quote-sidebar>span{font-size:12px;color:#cce0ab}.quote-amount{border-top:1px solid #2a3a51;margin-top:15px;padding-top:18px}.quote-amount small{font-size:11px;color:#a9bace}.quote-amount strong{display:block;font-size:20px;margin:10px 0}.quote-amount p,.quote-sidebar>p{font-size:11px;line-height:1.65;color:#afc0d3;margin:0}.quote-disabled{width:100%;opacity:.5;cursor:not-allowed;transform:none!important;box-shadow:none!important;margin-top:18px}
 @media(max-width:900px){.quote-module-grid{grid-template-columns:1fr}}@media(max-width:650px){.quote-module{padding:18px}.quote-module-head{align-items:start;flex-direction:column}.quote-phases{grid-template-columns:1fr 1fr}.quote-radio,.quote-inputs{grid-template-columns:1fr}}
+
+/* Exactly two insurance products; native preliminary forms, no sensitive data. */
+.insurer-grid-two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.insurer-grid-two .insurer-cta{cursor:pointer;color:#fff;font-size:12px;font-weight:800}
+.insurer-grid-two small a{text-decoration:underline;text-underline-offset:3px}
+.product-forms{margin:32px 0 0;background:#fff;border:1px solid #dde6ea;border-radius:18px;scroll-margin-top:95px;padding:28px;box-shadow:0 12px 38px #12263a11}
+.product-forms-title{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:24px;border-bottom:1px solid #e3e9ed;padding-bottom:18px}
+.product-forms-title h3{font:700 clamp(22px,2.5vw,29px)/1.3 var(--font-display);letter-spacing:-.05em;margin:10px 0 0}
+.forms-draft{font-size:11px;font-weight:800;color:#735a1d;background:#fff3d4;border:1px solid #e9d39c;padding:9px 13px;border-radius:30px}
+.product-form[hidden]{display:none!important}
+.product-form h4{font:700 clamp(18px,2vw,24px)/1.3 var(--font-display);margin:0 0 10px;letter-spacing:-.035em}
+.product-form>p{font-size:13px;color:#5c6d80;line-height:1.75;margin:0 0 24px}
+.product-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.product-fields label{display:flex;flex-direction:column;gap:8px}
+.product-fields label span{font-size:12px;font-weight:700;color:#35475b}
+.product-fields select,.product-fields input{width:100%;border:1px solid #d7e0e7;border-radius:10px;background:#f8fafb;color:#263748;padding:14px 12px;min-height:49px;font:inherit;font-size:13px}
+.form-legal{font-size:12px;line-height:1.75;padding:17px 18px;background:#f3f6f8;border-left:3px solid #a3c067;color:#506176;border-radius:8px;margin:22px 0}
+.form-official-link{display:inline-flex;text-align:center;gap:10px;font-weight:800;font-size:12px}
+@media(max-width:800px){.insurer-grid-two{grid-template-columns:1fr}}
+@media(max-width:560px){.product-forms{padding:18px}.product-forms-title{align-items:flex-start;flex-direction:column}.product-fields{grid-template-columns:1fr}.form-official-link{width:100%;justify-content:space-between}}
