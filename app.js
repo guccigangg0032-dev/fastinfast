@@ -183,21 +183,29 @@
   });
 })();
 
-/* In-page quote selector. No pricing, KDP, payments or sensitive data flows. */
-(function(){"use strict";
-const form=document.getElementById("inlineQuote"),panel=document.getElementById("quote-module");
-if(!form||!panel)return;
-const names={halyk:"Halyk Insurance",nomad:"NOMAD Insurance",eurasia:"СК «Евразия»"};
-function refresh(){
-const selected=form.querySelector('input[name="insurer"]:checked');
-const id=selected?selected.value:"halyk"; const name=names[id]||names.halyk;
-document.getElementById("quoteCompany").textContent=name;
-document.getElementById("quoteSelectedProduct").textContent=document.getElementById("quoteKind").value;
-document.getElementById("quoteStatus").textContent="API "+name+" ещё не подключён. Расчёт, подтверждение 1414 и оплата недоступны.";
-}
-document.querySelectorAll("[data-choose-insurer]").forEach(button=>button.addEventListener("click",()=>{
-const opt=form.querySelector('input[name="insurer"][value="'+button.dataset.chooseInsurer+'"]');
-if(opt)opt.checked=true;refresh();panel.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});
-}));
-form.addEventListener("change",refresh);form.addEventListener("submit",e=>e.preventDefault());refresh();
+/* Two-product in-page preparation forms. Never transmit or store personal information. */
+(function () {
+  "use strict";
+  const container = document.getElementById("product-forms");
+  if (!container) return;
+  const products = ["home", "auto"];
+  function openProduct(product, scroll) {
+    if (!products.includes(product)) return;
+    products.forEach((id) => {
+      const panel = document.getElementById("product-form-" + id);
+      const toggle = document.querySelector('[data-open-product="' + id + '"]');
+      if (panel) {
+        const visible = id === product;
+        panel.hidden = !visible;
+        panel.classList.toggle("active", visible);
+        if (toggle) toggle.setAttribute("aria-expanded", String(visible));
+      }
+    });
+    if (scroll) container.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});
+  }
+  document.querySelectorAll("[data-open-product]").forEach(button=>{
+    button.addEventListener("click",()=>openProduct(button.dataset.openProduct,true));
+  });
+  container.querySelectorAll("form").forEach(form=>form.addEventListener("submit",event=>event.preventDefault()));
+  openProduct("home",false);
 })();
