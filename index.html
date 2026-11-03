@@ -112,33 +112,55 @@
     <section class="section insurer-directory" id="insurers" aria-labelledby="insurers-title">
       <div class="container">
         <div class="insurer-header">
-          <div><span class="section-label"><span class="label-line"></span> ОФИЦИАЛЬНЫЕ СТРАХОВЩИКИ</span><h2 id="insurers-title">Выберите компанию.<br><em>Продолжите на её сайте.</em></h2></div>
-          <p>Выберите страховщика. ИИН, расчёт и возможное подтверждение через 1414 выполняются на официальной стороне страховой организации, не на нашем сайте.</p>
+          <div><span class="section-label"><span class="label-line"></span> ОФИЦИАЛЬНЫЕ СТРАХОВЩИКИ</span><h2 id="insurers-title">Выберите страховую.<br><em>Начните у нас.</em></h2></div>
+          <p>Подготовьте параметры страхования в собственной форме на preview.asia. Настоящие расчёт, 1414 и оплата станут доступны только после согласования API со страховщиком.</p>
         </div>
         <div class="insurer-grid">
           <article class="insurer-card">
             <div class="insurer-card-label"><span>ОГПО ВТС</span><span aria-hidden="true">↗</span></div>
             <h3>Halyk <span>Insurance</span></h3>
             <p>Обязательное автострахование. Перейдите к расчёту стоимости и оформлению на официальном сайте.</p>
-            <a href="https://skhalyk.kz/categories/auto/ogpo-ad" class="button button-dark insurer-cta" rel="noreferrer">Перейти к расчёту <span aria-hidden="true">↗</span></a>
+            <button type="button" class="button button-dark insurer-cta" data-choose-insurer="halyk">Открыть нашу форму <span aria-hidden="true">↗</span></button>
             <small>skhalyk.kz</small>
           </article>
           <article class="insurer-card">
             <div class="insurer-card-label"><span>КДП / 1414</span><span aria-hidden="true">↗</span></div>
             <h3>NOMAD <span>Insurance</span></h3>
             <p>Официальная форма согласия на доступ к персональным данным. Это не страница оформления полиса.</p>
-            <a href="https://nomad.kz/ru/consent" class="button button-dark insurer-cta" rel="noreferrer">Открыть форму КДП <span aria-hidden="true">↗</span></a>
+            <button type="button" class="button button-dark insurer-cta" data-choose-insurer="nomad">Открыть нашу форму <span aria-hidden="true">↗</span></button>
             <small>nomad.kz</small>
           </article>
           <article class="insurer-card">
             <div class="insurer-card-label"><span>АВТОСТРАХОВАНИЕ</span><span aria-hidden="true">↗</span></div>
             <h3>СК <span>«Евразия»</span></h3>
             <p>Калькулятор и онлайн-магазин страховых полисов на официальном сайте компании.</p>
-            <a href="https://eurasia36.kz/Eurasia/?open=calc" class="button button-dark insurer-cta" rel="noreferrer">Открыть калькулятор <span aria-hidden="true">↗</span></a>
+            <button type="button" class="button button-dark insurer-cta" data-choose-insurer="eurasia">Открыть нашу форму <span aria-hidden="true">↗</span></button>
             <small>eurasia36.kz</small>
           </article>
         </div>
-        <p class="insurer-disclaimer">При нажатии вы покидаете Fast Insurance Online. Личные данные вводятся только на сайте выбранного страховщика; мы не получаем ИИН и не отправляем SMS через 1414. Размещение ссылок не означает официального партнёрства с указанными компаниями.</p>
+
+        <div class="quote-module" id="quote-module">
+          <div class="quote-module-head"><div><span class="quote-eyebrow">PREVIEW.ASIA · АВТОСТРАХОВАНИЕ</span><h3>Рассчитать и оформить полис</h3></div><span class="quote-pending">Ожидает API страховщиков</span></div>
+          <div class="quote-phases"><span class="quote-active">01 Выбор</span><span>02 Расчёт</span><span>03 КДП 1414</span><span>04 Оплата</span></div>
+          <div class="quote-module-grid">
+            <form id="inlineQuote" novalidate>
+              <fieldset class="quote-radio"><legend>Страховая компания</legend>
+                <label><input type="radio" name="insurer" value="halyk" checked> Halyk Insurance</label>
+                <label><input type="radio" name="insurer" value="nomad"> NOMAD Insurance</label>
+                <label><input type="radio" name="insurer" value="eurasia"> СК «Евразия»</label>
+              </fieldset>
+              <div class="quote-inputs">
+                <label class="field"><span>Вид страховки</span><select id="quoteKind"><option value="ОГПО ВТС">ОГПО ВТС</option><option value="КАСКО">КАСКО</option></select></label>
+                <label class="field"><span>Регион регистрации</span><select id="quoteRegion"><option value="">Выберите регион</option><option>Астана</option><option>Алматы</option><option>Шымкент</option><option>Акмолинская область</option><option>Алматинская область</option><option>Карагандинская область</option><option>Туркестанская область</option><option>Другой регион Казахстана</option></select></label>
+                <label class="field"><span>Тип автомобиля</span><select id="quoteCar"><option>Легковой автомобиль</option><option>Грузовой автомобиль</option><option>Автобус</option><option>Мотоцикл</option></select></label>
+                <label class="field"><span>Дата начала полиса</span><input id="quoteStartDate" type="date"></label>
+              </div>
+              <p class="quote-warning"><strong>Безопасность:</strong> не вводите на этой странице ИИН, номер телефона, SMS-код или банковские данные. Реальное оформление пока не подключено.</p>
+            </form>
+            <aside class="quote-sidebar" aria-live="polite"><small>ВЫБРАННАЯ КОМПАНИЯ</small><strong id="quoteCompany">Halyk Insurance</strong><span id="quoteSelectedProduct">ОГПО ВТС</span><div class="quote-amount"><small>Стоимость полиса</small><strong>Не рассчитана</strong><p>Нужен ответ официального API страховой компании.</p></div><button class="button button-lime quote-disabled" type="button" disabled>Рассчитать и оплатить ↗</button><p id="quoteStatus">API Halyk Insurance ещё не подключён.</p></aside>
+          </div>
+        </div>
+        <p class="insurer-disclaimer">Это предварительная форма. Здесь не запрашиваются ИИН, реквизиты карт или SMS-коды. Цена, подтверждение 1414 и оплата недоступны до подключения официального API и защищённого сервера.</p>
       </div>
     </section>
     <section class="section process" id="steps" aria-labelledby="steps-title"><div class="container"><div class="process-header"><span class="section-label"><span class="label-line"></span> 03 / ПРОЦЕСС</span><h2 id="steps-title">Четыре шага<br>к <em>ясному решению.</em></h2><p>Никакой магии: всё по порядку, без обещаний невозможного.</p></div><div class="process-grid">
