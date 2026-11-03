@@ -182,3 +182,22 @@
     }
   });
 })();
+
+/* In-page quote selector. No pricing, KDP, payments or sensitive data flows. */
+(function(){"use strict";
+const form=document.getElementById("inlineQuote"),panel=document.getElementById("quote-module");
+if(!form||!panel)return;
+const names={halyk:"Halyk Insurance",nomad:"NOMAD Insurance",eurasia:"СК «Евразия»"};
+function refresh(){
+const selected=form.querySelector('input[name="insurer"]:checked');
+const id=selected?selected.value:"halyk"; const name=names[id]||names.halyk;
+document.getElementById("quoteCompany").textContent=name;
+document.getElementById("quoteSelectedProduct").textContent=document.getElementById("quoteKind").value;
+document.getElementById("quoteStatus").textContent="API "+name+" ещё не подключён. Расчёт, подтверждение 1414 и оплата недоступны.";
+}
+document.querySelectorAll("[data-choose-insurer]").forEach(button=>button.addEventListener("click",()=>{
+const opt=form.querySelector('input[name="insurer"][value="'+button.dataset.chooseInsurer+'"]');
+if(opt)opt.checked=true;refresh();panel.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});
+}));
+form.addEventListener("change",refresh);form.addEventListener("submit",e=>e.preventDefault());refresh();
+})();
