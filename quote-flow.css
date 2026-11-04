@@ -1,5 +1,5 @@
 /* Additional in-page quote flow controls */
-.quote-sidebar .quote-official-link { margin-top: 1rem; width: 100%; display: inline-flex; justify-content: center; text-align: center; align-items: center; text-decoration: none; line-height: 1.35; }
-.quote-sidebar .quote-return-info { font-size: .82rem; line-height: 1.55; color: #58667a; margin-top: .6rem; }
+.quote-sidebar .quote-official-link { margin-top: 1rem; width: 100%; display: inline-flex; justify-content: center; text-align: center; align-items: center; text-decoration: none; line-height: 1.35; background: #eef8d9; color: #102037; border: 1px solid #eef8d9; }
+.quote-sidebar .quote-return-info { font-size: .82rem; line-height: 1.55; color: #c3d1df; margin-top: .6rem; }
 .quote-sidebar .quote-amount strong { overflow-wrap: anywhere; }
 @media(max-width: 560px) { .quote-sidebar .quote-official-link { font-size: .88rem; padding: .9rem .8rem; } }
