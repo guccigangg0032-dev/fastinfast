@@ -54,6 +54,7 @@
       ? "Можно запросить стоимость у подключённого страховщика. Без ИИН и персональных данных."
       : "Автоматический расчёт не подключён. Используйте официальный сайт страховой.";
     button.disabled = !apiBase;
+    button.classList.toggle("quote-disabled", !apiBase);
     button.textContent = "Рассчитать стоимость";
     official.href = insurers[selectedInsurer()].url;
     official.textContent = insurers[selectedInsurer()].label + " ↗";
