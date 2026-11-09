@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="guide-shop.css">
   <link rel="stylesheet" href="cookie-consent.css">
   <link rel="stylesheet" href="hero-banner.css">
+  <link rel="stylesheet" href="site-updates.css">
 
 </head>
 <body>
@@ -29,6 +30,7 @@
         <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><path d="M8 31V13h18M8 22h15" stroke="currentColor" stroke-width="5" stroke-linecap="square"/><path d="M23 29l12-12m-9 0h9v9" stroke="currentColor" stroke-width="4" stroke-linecap="square"/></svg></span>
         <span class="brand-copy"><strong>FAST<span class="brand-accent">.</span></strong><small>INSURANCE ONLINE</small></span>
       </a>
+      <div class="site-language-switch" role="group" aria-label="Язык сайта"><button type="button" class="site-language-btn is-selected" data-language="ru" aria-pressed="true">РУС</button><button type="button" class="site-language-btn" data-language="kk" aria-pressed="false">ҚАЗ</button></div>
       <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="nav" id="primary-navigation" aria-label="Основное меню"><a href="#guides">Видеоинструкции</a><a href="#insurers">Страховщики</a><a href="#process">Как оформить</a><a href="#faq">Вопросы</a><a class="nav-cta" href="#order">Запросить видео <span aria-hidden="true">↗</span></a></nav>
     </div>
@@ -59,129 +61,61 @@
 <section class="section video-store" id="guides" aria-labelledby="guides-title">
 <div class="container">
  <div class="guide-section-title"><div><span class="guide-kicker">ВИДЕОИНСТРУКЦИИ</span><h2 id="guides-title">Оформите ОГПО сами.<br><em>С понятным маршрутом.</em></h2></div><p>Выберите тему обучения. Видео объясняют последовательность действий, а не заменяют официальный сайт страховщика.</p></div>
- <div class="guide-products">
-   <article class="guide-product"><div class="guide-product-top"><span>ГАЙД / ОСНОВЫ</span><span>▶</span></div><div class="guide-video-art guide-art-a"><span>ОГПО</span></div><h3>ОГПО с нуля</h3><p>Выбор страховой, подготовка документов, расчёт, оплата и проверка готового полиса.</p><button type="button" data-guide="ОГПО с нуля" class="guide-product-cta">Запросить видеоинструкцию <span>↗</span></button></article>
-   <article class="guide-product"><div class="guide-product-top"><span>ГАЙД / БЕЗОПАСНОСТЬ</span><span>▶</span></div><div class="guide-video-art guide-art-b"><span>1414</span></div><h3>КДП, 1414 и идентификация</h3><p>Как проходить проверку личности на официальном ресурсе, понимать согласия и не передавать коды посторонним.</p><button type="button" data-guide="КДП, 1414 и идентификация" class="guide-product-cta">Запросить видеоинструкцию <span>↗</span></button></article>
-   <article class="guide-product"><div class="guide-product-top"><span>ГАЙД / ПО СТРАХОВЩИКУ</span><span>▶</span></div><div class="guide-video-art guide-art-c"><span>ONLINE</span></div><h3>Пошагово в выбранной страховой</h3><p>Разбор интерфейса Halyk, Freedom, Amanat, NOMAD или другой компании по вашему выбору.</p><button type="button" data-guide="Пошагово в выбранной страховой" class="guide-product-cta">Запросить видеоинструкцию <span>↗</span></button></article>
-   <article class="guide-product"><div class="guide-product-top"><span>ГАЙД / ПОСЛЕ ОПЛАТЫ</span><span>▶</span></div><div class="guide-video-art guide-art-d"><span>✓</span></div><h3>Проверка электронного полиса</h3><p>Как убедиться, что страховка оформлена и действительна, и где найти электронные документы.</p><button type="button" data-guide="Проверка электронного полиса" class="guide-product-cta">Запросить видеоинструкцию <span>↗</span></button></article>
- </div>
- <p class="guide-shop-note">Стоимость, состав материалов и возможность выдачи конкретного видео подтверждаются до оплаты. Автоматическая покупка и скачивание пока не подключены: сайт не списывает деньги.</p>
+ <div class="tutorial-gallery" id="tutorials" aria-label="Видеоинструкции">
+  <article class="tutorial-card">
+    <div class="tutorial-video-frame"><video class="tutorial-video" controls playsinline preload="metadata" data-src-ru="media/registration-ru.mp4" data-src-kk="media/registration-kk.mp4" src="media/registration-ru.mp4" aria-label="Регистрация: пошаговая видеоинструкция"></video></div>
+    <div class="tutorial-body"><span class="guide-kicker">ШАГ 1</span><h3>Регистрация: пошаговая инструкция</h3><p>Как зарегистрироваться перед оформлением страховки. Озвучка меняется с языком сайта.</p><p class="tutorial-error" hidden>Видеофайл пока не опубликован на хостинге.</p></div>
+  </article>
+  <article class="tutorial-card">
+    <div class="tutorial-video-frame"><video class="tutorial-video" controls playsinline preload="metadata" data-src-ru="media/kmic-ogpo-ru.mp4" data-src-kk="media/kmic-ogpo-kk.mp4" src="media/kmic-ogpo-ru.mp4" aria-label="Казахмыс: оформление ОГПО"></video></div>
+    <div class="tutorial-body"><span class="guide-kicker">ШАГ 2</span><h3>Казахмыс: оформление ОГПО</h3><p>Пошаговый видеоурок по оформлению ОГПО в сервисе Казахмыс на выбранном языке.</p><p class="tutorial-error" hidden>Видеофайл пока не опубликован на хостинге.</p></div>
+  </article>
+</div>
+<p class="guide-shop-note">Оформление полиса и его оплата выполняются только на официальном сайте выбранной компании. Видеоматериалы носят информационный характер.</p>
 </div>
 </section>
 <section class="section guide-insurers-section" id="insurers" aria-labelledby="insurers-title">
   <div class="container">
-    <div class="guide-section-title"><div><span class="guide-kicker">КАТАЛОГ СТРАХОВЩИКОВ</span><h2 id="insurers-title">Выбирайте компанию.<br><em>Оформляйте напрямую.</em></h2></div><p>15 страховых компаний отрасли общего страхования из реестра АРРФР. Для проверенных форм даны прямые переходы. Остальные ссылки ведут на официальный сайт, без выдуманной страницы заявки.</p></div>
+    <div class="guide-section-title"><div><span class="guide-kicker">КАТАЛОГ СТРАХОВЩИКОВ</span><h2 id="insurers-title">Выбирайте компанию.<br><em>Оформляйте напрямую.</em></h2></div><p>Пять выбранных площадок: KupiPolis, Казахмыс, Nomad Insurance, Amanat и Interteach. Проверяйте условия и стоимость полиса на официальном ресурсе.</p></div>
     <div class="guide-insurer-toolbar">
       <label class="guide-search"><span aria-hidden="true">⌕</span><span class="sr-only">Поиск страховщика</span><input type="search" id="guideInsurerSearch" placeholder="Найти страховую компанию" autocomplete="off"></label>
-      <div class="guide-filter-set" role="group" aria-label="Фильтр страховщиков"><button type="button" class="guide-filter is-selected" data-guide-filter="all" aria-pressed="true">Все</button><button type="button" class="guide-filter" data-guide-filter="direct" aria-pressed="false">Прямые переходы</button><button type="button" class="guide-filter" data-guide-filter="other" aria-pressed="false">Остальные</button></div>
+      <div class="guide-filter-set" role="group" aria-label="Фильтр страховщиков"><button type="button" class="guide-filter is-selected" data-guide-filter="all" aria-pressed="true">Все</button><button type="button" class="guide-filter" data-guide-filter="direct" aria-pressed="false">Доступные</button><button type="button" class="guide-filter" data-guide-filter="unavailable" aria-pressed="false">Временно недоступно</button></div>
     </div>
     <div class="guide-insurer-grid" id="guideInsurerGrid">
-<article class="guide-insurer" data-name="halyk insurance" data-kind="direct">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">HI</span><span class="guide-insurer-type direct">Прямой переход</span></div>
-  <h3>Halyk Insurance</h3><p>ОГПО: продукт и оформление. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://skhalyk.kz/categories/auto/ogpo-ad" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="ОГПО: продукт и оформление — Halyk Insurance">Перейти к оформлению <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">skhalyk.kz</div>
+<article class="guide-insurer" data-name="купиполис kupipolis сентрас" data-kind="direct">
+  <div class="guide-insurer-head"><span class="guide-insurer-mark">KP</span><span class="guide-insurer-type direct">Онлайн-сервис</span></div>
+  <h3>KupiPolis</h3><p>Онлайн-сервис страховой компании «Сентрас Иншуранс». Выберите обязательное автострахование на официальном сайте сервиса.</p>
+  <a href="https://www.kupipolis.kz/ru/" target="_blank" rel="noopener noreferrer" class="guide-insurer-action">Открыть KupiPolis <span aria-hidden="true">↗</span></a>
+  <div class="guide-insurer-domain">kupipolis.kz</div>
 </article>
-
-<article class="guide-insurer" data-name="freedom insurance" data-kind="direct">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">FI</span><span class="guide-insurer-type direct">Прямой переход</span></div>
-  <h3>Freedom Insurance</h3><p>Онлайн-форма ОГПО. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://ffins.kz/en/pages/ogpo/calculator" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Онлайн-форма ОГПО — Freedom Insurance">Перейти к оформлению <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">ffins.kz</div>
-</article>
-
-<article class="guide-insurer" data-name="amanat" data-kind="direct">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">A</span><span class="guide-insurer-type direct">Прямой переход</span></div>
-  <h3>Amanat</h3><p>Оформление ОГПО. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://amanat24.kz/buy-ogpo" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Оформление ОГПО — Amanat">Перейти к оформлению <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">amanat24.kz</div>
-</article>
-
-<article class="guide-insurer" data-name="alatau city garant" data-kind="direct">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">AC</span><span class="guide-insurer-type direct">Прямой переход</span></div>
-  <h3>Alatau City Garant</h3><p>Форма ОГПО на главной. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://acgarant.kz/ru" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Форма ОГПО на главной — Alatau City Garant">Перейти к оформлению <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">acgarant.kz</div>
-</article>
-
-<article class="guide-insurer" data-name="basel" data-kind="direct">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">B</span><span class="guide-insurer-type direct">Прямой переход</span></div>
-  <h3>Basel</h3><p>ОГПО: онлайн-оформление. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://www.basel.kz/ru/buy/gpo" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="ОГПО: онлайн-оформление — Basel">Перейти к оформлению <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">basel.kz</div>
-</article>
-
-<article class="guide-insurer" data-name="asko" data-kind="direct">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">A</span><span class="guide-insurer-type direct">Прямой переход</span></div>
-  <h3>ASKO</h3><p>Онлайн-оформление ОГПО. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://asko.kz/auto" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Онлайн-оформление ОГПО — ASKO">Перейти к оформлению <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">asko.kz</div>
-</article>
-
-<article class="guide-insurer" data-name="виктория" data-kind="direct">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">В</span><span class="guide-insurer-type direct">Прямой переход</span></div>
-  <h3>Виктория</h3><p>Онлайн-калькулятор ОГПО. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://sub.vic.kz/calcvts" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Онлайн-калькулятор ОГПО — Виктория">Перейти к оформлению <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">vic.kz</div>
-</article>
-
-<article class="guide-insurer" data-name="nomad insurance" data-kind="direct">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">NI</span><span class="guide-insurer-type direct">Прямой переход</span></div>
-  <h3>Nomad Insurance</h3><p>Оформление через личный кабинет. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://cabinet.nomad.kz/" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Оформление через личный кабинет — Nomad Insurance">Перейти к оформлению <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">nomad.kz</div>
-</article>
-
-<article class="guide-insurer" data-name="евразия" data-kind="direct">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">Е</span><span class="guide-insurer-type direct">Прямой переход</span></div>
-  <h3>Евразия</h3><p>Калькулятор страховщика. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://eurasia36.kz/Eurasia/?open=calc" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Калькулятор страховщика — Евразия">Перейти к оформлению <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">eurasia36.kz</div>
-</article>
-
-<article class="guide-insurer" data-name="казахмыс" data-kind="product">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">К</span><span class="guide-insurer-type product">Страница ОГПО</span></div>
-  <h3>Казахмыс</h3><p>Страница продукта ОГПО. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://www.kmic.kz/product/Compulsory_Insurance_of_Civil_Liability_of_Vehicle_Owners_for_individuals" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Страница продукта ОГПО — Казахмыс">Открыть ОГПО <span aria-hidden="true">↗</span></a>
+<article class="guide-insurer" data-name="казахмыс kmic" data-kind="direct">
+  <div class="guide-insurer-head"><span class="guide-insurer-mark">KM</span><span class="guide-insurer-type direct">ОГПО</span></div>
+  <h3>Казахмыс</h3><p>Официальная страница ОГПО. Инструкция по оформлению размещена в разделе видео выше.</p>
+  <a href="https://www.kmic.kz/product/Compulsory_Insurance_of_Civil_Liability_of_Vehicle_Owners_for_individuals" target="_blank" rel="noopener noreferrer" class="guide-insurer-action">Открыть ОГПО <span aria-hidden="true">↗</span></a>
   <div class="guide-insurer-domain">kmic.kz</div>
 </article>
-
-<article class="guide-insurer" data-name="нефтяная страховая компания" data-kind="home">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">НС</span><span class="guide-insurer-type home">Сайт компании</span></div>
-  <h3>Нефтяная страховая компания</h3><p>Официальный сайт страховщика. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://www.nsk.kz/" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Официальный сайт страховщика — Нефтяная страховая компания">Открыть сайт <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">nsk.kz</div>
+<article class="guide-insurer" data-name="nomad nomad insurance номад" data-kind="direct">
+  <div class="guide-insurer-head"><span class="guide-insurer-mark">NI</span><span class="guide-insurer-type direct">Личный кабинет</span></div>
+  <h3>Nomad Insurance</h3><p>Перейдите в официальный личный кабинет страховщика для самостоятельного оформления.</p>
+  <a href="https://cabinet.nomad.kz/" target="_blank" rel="noopener noreferrer" class="guide-insurer-action">Открыть кабинет <span aria-hidden="true">↗</span></a>
+  <div class="guide-insurer-domain">nomad.kz</div>
 </article>
-
-<article class="guide-insurer" data-name="сентрас иншуранс" data-kind="home">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">СИ</span><span class="guide-insurer-type home">Сайт компании</span></div>
-  <h3>Сентрас Иншуранс</h3><p>Официальный сайт страховщика. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://insis.cic.kz/" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Официальный сайт страховщика — Сентрас Иншуранс">Открыть сайт <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">cic.kz</div>
+<article class="guide-insurer" data-name="amanat аманат" data-kind="direct">
+  <div class="guide-insurer-head"><span class="guide-insurer-mark">AM</span><span class="guide-insurer-type direct">ОГПО</span></div>
+  <h3>Amanat</h3><p>Официальная страница самостоятельного онлайн-оформления ОГПО.</p>
+  <a href="https://amanat24.kz/buy-ogpo" target="_blank" rel="noopener noreferrer" class="guide-insurer-action">Перейти к оформлению <span aria-hidden="true">↗</span></a>
+  <div class="guide-insurer-domain">amanat24.kz</div>
 </article>
-
-<article class="guide-insurer" data-name="interteach" data-kind="home">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">I</span><span class="guide-insurer-type home">Сайт компании</span></div>
-  <h3>Interteach</h3><p>Официальный сайт страховщика. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://www.interteach.kz/" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Официальный сайт страховщика — Interteach">Открыть сайт <span aria-hidden="true">↗</span></a>
+<article class="guide-insurer guide-insurer-unavailable" data-name="interteach интертич интертеч" data-kind="unavailable">
+  <div class="insurer-stamp" role="status">БАЗА ВРЕМЕННО НЕ РАБОТАЕТ</div>
+  <div class="guide-insurer-head"><span class="guide-insurer-mark">IT</span><span class="guide-insurer-type home">Временно недоступно</span></div>
+  <h3>Interteach</h3><p>По информации владельца Fast Insurance, база оформления временно не работает. Статус не подтверждён страховщиком.</p>
+  <a href="https://www.interteach.kz/ru" target="_blank" rel="noopener noreferrer" class="guide-insurer-action">Официальный сайт <span aria-hidden="true">↗</span></a>
   <div class="guide-insurer-domain">interteach.kz</div>
 </article>
-
-<article class="guide-insurer" data-name="sinoasia b&amp;r" data-kind="home">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">SB</span><span class="guide-insurer-type home">Сайт компании</span></div>
-  <h3>Sinoasia B&amp;R</h3><p>Официальный сайт страховщика. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://www.sinoasia.kz/" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Официальный сайт страховщика — Sinoasia B&amp;R">Открыть сайт <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">sinoasia.kz</div>
-</article>
-
-<article class="guide-insurer" data-name="trust insurance" data-kind="home">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">TI</span><span class="guide-insurer-type home">Сайт компании</span></div>
-  <h3>Trust Insurance</h3><p>Сайт по данным реестра АРРФР. Данные для полиса вводятся только на стороне страховой компании.</p>
-  <a href="https://www.ictransoil.kz/" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Сайт по данным реестра АРРФР — Trust Insurance">Открыть сайт <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">ictransoil.kz</div>
-</article></div>
+</div>
     <p id="guideEmpty" class="guide-empty" hidden>По вашему запросу страховщик не найден.</p>
-    <div class="guide-insurer-clarity"><strong>Обратите внимание</strong><p>Реестр организаций общего страхования не является подтверждением онлайн-доступности ОГПО у каждой компании. У некоторых страховщиков может требоваться регистрация, идентификация или отдельный переход из каталога продуктов. Ссылки не означают партнёрство с Fast Insurance Online.</p><a href="https://www.gov.kz/org/ardfm/financial-organizations/25?lang=ru" target="_blank" rel="noopener noreferrer">Официальный реестр АРРФР ↗</a></div>
+    <div class="guide-insurer-clarity"><strong>Обратите внимание</strong><p>KupiPolis — сервис Сентрас Иншуранс, а не отдельная страховая компания. Ссылки не означают партнёрство с Fast Insurance Online. Доступность отдельных страховых сервисов может меняться.</p><a href="https://www.gov.kz/org/ardfm/financial-organizations/25?lang=ru" target="_blank" rel="noopener noreferrer">Официальный реестр АРРФР ↗</a></div>
   </div>
 </section>
 <section class="section guide-process-section" id="process">
@@ -191,7 +125,7 @@
 </section>
 <section class="section guide-order-section" id="order">
 <div class="container guide-order-wrap"><div><span class="guide-kicker">ЗАПРОС НА ВИДЕО</span><h2>Нужна инструкция?<br><em>Выберите тему.</em></h2><p>Сформируйте текст запроса для отправки продавцу. Форма не собирает персональные данные, не проводит оплату и ничего не отправляет автоматически.</p></div>
-<div class="guide-order-card"><label for="guideChoice">Какая инструкция нужна?</label><select id="guideChoice"><option>ОГПО с нуля</option><option>КДП, 1414 и идентификация</option><option>Пошагово в выбранной страховой</option><option>Проверка электронного полиса</option></select><label for="guideCompanyChoice">Страховая компания (при необходимости)</label><select id="guideCompanyChoice"><option value="">Без привязки к компании</option><option value="Halyk Insurance">Halyk Insurance</option><option value="Freedom Insurance">Freedom Insurance</option><option value="Amanat">Amanat</option><option value="Alatau City Garant">Alatau City Garant</option><option value="Basel">Basel</option><option value="ASKO">ASKO</option><option value="Виктория">Виктория</option><option value="Nomad Insurance">Nomad Insurance</option><option value="Евразия">Евразия</option><option value="Казахмыс">Казахмыс</option><option value="Нефтяная страховая компания">Нефтяная страховая компания</option><option value="Сентрас Иншуранс">Сентрас Иншуранс</option><option value="Interteach">Interteach</option><option value="Sinoasia B&amp;R">Sinoasia B&amp;R</option><option value="Trust Insurance">Trust Insurance</option></select><button type="button" id="guidePrepareOrder" class="guide-order-submit">Сформировать запрос <span>↗</span></button><div class="guide-order-result" id="guideOrderResult" hidden><p>Текст готов. Скопируйте его или поделитесь через приложение на телефоне.</p><textarea id="guideOrderText" rows="4" readonly></textarea><button type="button" id="guideShareOrder" class="guide-order-share">Поделиться / скопировать</button><span class="guide-order-status" id="guideOrderStatus" role="status" aria-live="polite"></span></div><small>Оплата, цена и выдача видео согласуются отдельно до покупки. Наличие файлов на сайте пока не подтверждено.</small></div></div></section>
+<div class="guide-order-card"><label for="guideChoice">Какая инструкция нужна?</label><select id="guideChoice"><option>ОГПО с нуля</option><option>КДП, 1414 и идентификация</option><option>Пошагово в выбранной страховой</option><option>Проверка электронного полиса</option></select><label for="guideCompanyChoice">Страховая компания (при необходимости)</label><select id="guideCompanyChoice"><option value="">Без привязки к компании</option><option value="KupiPolis">KupiPolis</option><option value="Казахмыс">Казахмыс</option><option value="Nomad Insurance">Nomad Insurance</option><option value="Amanat">Amanat</option><option value="Interteach">Interteach</option></select><button type="button" id="guidePrepareOrder" class="guide-order-submit">Сформировать запрос <span>↗</span></button><div class="guide-order-result" id="guideOrderResult" hidden><p>Текст готов. Скопируйте его или поделитесь через приложение на телефоне.</p><textarea id="guideOrderText" rows="4" readonly></textarea><button type="button" id="guideShareOrder" class="guide-order-share">Поделиться / скопировать</button><span class="guide-order-status" id="guideOrderStatus" role="status" aria-live="polite"></span></div><small>Оплата, цена и выдача видео согласуются отдельно до покупки. Наличие файлов на сайте пока не подтверждено.</small></div></div></section>
 <section class="section guide-faq-section" id="faq"><div class="container guide-faq-wrap"><div><span class="guide-kicker">ВОПРОСЫ И ОТВЕТЫ</span><h2>Без путаницы<br><em>в условиях.</em></h2></div><div class="guide-answers">
 <details><summary>Видеоинструкция и страховка — это одно и то же?</summary><p>Нет. Видео — отдельный информационный продукт. Страховой полис выдаётся только страховой компанией. Оплата видео не является оплатой полиса.</p></details>
 <details><summary>Могу ли я оформить ОГПО без покупки видео?</summary><p>Да. Вы можете бесплатно перейти к страховой компании из каталога и оформить полис самостоятельно. Покупка инструкции необязательна.</p></details>
@@ -201,7 +135,8 @@
 </div></div></section>
 </main>
   
-<footer class="footer"><div class="container"><div class="footer-main"><div class="footer-brand"><a href="#top" class="brand"><span class="brand-mark" aria-hidden="true">F↗</span><span class="brand-copy"><strong>FAST<span class="brand-accent">.</span></strong><small>INSURANCE ONLINE</small></span></a><p>Видеоинструкции и каталог официальных страховщиков Казахстана.</p></div><div class="footer-links"><span>РАЗДЕЛЫ</span><a href="#guides">Видеоинструкции</a><a href="#insurers">Страховые компании</a><a href="#process">Как оформить</a><a href="#faq">Вопросы</a></div><div class="footer-links"><span>ОФИЦИАЛЬНЫЕ ИСТОЧНИКИ</span><a href="https://www.gov.kz/situations/15/62" target="_blank" rel="noopener noreferrer">Оформление ОГПО на gov.kz ↗</a><a href="https://www.gov.kz/org/ardfm/financial-organizations/25?lang=ru" target="_blank" rel="noopener noreferrer">Реестр страховщиков ↗</a><a href="https://id.mkb.kz/" target="_blank" rel="noopener noreferrer">Проверка полиса ↗</a></div></div><div class="footer-disclaimer"><p><a href="privacy.html">Политика конфиденциальности и cookie</a> · <button type="button" class="cookie-settings-link" data-cookie-settings>Настройки cookie</button></p><strong>Правовая информация</strong><p>Fast Insurance Online — независимый информационный сервис. Мы не являемся страховой компанией, не представляем перечисленные компании без отдельных договорных оснований и не принимаем страховые премии. Оформление, идентификация, оплата и выдача полиса выполняются на официальных ресурсах страховщиков. Указание компании в каталоге не означает партнёрства.</p><p>Видеоинструкции — самостоятельный информационный продукт, не страховая услуга. Сведения о продавце, правила приобретения, точные цены, условия доступа и возврата должны быть опубликованы до запуска приёма платежей. Данные клиентов и коды подтверждения на этом сайте не собираются.</p></div><div class="footer-bottom"><span>© <span id="year">2026</span> Fast Insurance Online</span><span>Данные о компаниях сверены с реестром АРРФР, ноябрь 2026</span><a href="#top">Наверх ↑</a></div></div></footer>
+<footer class="footer"><div class="container"><div class="footer-main"><div class="footer-brand"><a href="#top" class="brand"><span class="brand-mark" aria-hidden="true">F↗</span><span class="brand-copy"><strong>FAST<span class="brand-accent">.</span></strong><small>INSURANCE ONLINE</small></span></a><p>Видеоинструкции и каталог официальных страховщиков Казахстана.</p></div><div class="footer-links"><span>РАЗДЕЛЫ</span><a href="#guides">Видеоинструкции</a><a href="#insurers">Страховые компании</a><a href="#process">Как оформить</a><a href="#faq">Вопросы</a></div><div class="footer-links"><span>ОФИЦИАЛЬНЫЕ ИСТОЧНИКИ</span><a href="https://www.gov.kz/situations/15/62" target="_blank" rel="noopener noreferrer">Оформление ОГПО на gov.kz ↗</a><a href="https://www.gov.kz/org/ardfm/financial-organizations/25?lang=ru" target="_blank" rel="noopener noreferrer">Реестр страховщиков ↗</a><a href="https://id.mkb.kz/" target="_blank" rel="noopener noreferrer">Проверка полиса ↗</a></div></div><div class="footer-disclaimer"><p><a href="privacy.html">Политика конфиденциальности и cookie</a> · <button type="button" class="cookie-settings-link" data-cookie-settings>Настройки cookie</button></p><strong>Правовая информация</strong><p>Fast Insurance Online — независимый информационный сервис. Мы не являемся страховой компанией, не представляем перечисленные компании без отдельных договорных оснований и не принимаем страховые премии. Оформление, идентификация, оплата и выдача полиса выполняются на официальных ресурсах страховщиков. Указание компании в каталоге не означает партнёрства.</p><p>Видеоинструкции — самостоятельный информационный продукт, не страховая услуга. Сведения о продавце, правила приобретения, точные цены, условия доступа и возврата должны быть опубликованы до запуска приёма платежей. Данные клиентов и коды подтверждения на этом сайте не собираются.</p></div><div class="footer-bottom"><span>© <span id="year">2026</span> Fast Insurance Online</span><span>Каталог выбранных площадок · ноябрь 2026</span><a href="#top">Наверх ↑</a></div></div></footer>
 <script src="guide-shop.js" defer></script>
 <script src="cookie-consent.js" defer></script>
+<script src="site-language.js" defer></script>
 </body></html>
