@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="guide-shop.css">
   <link rel="stylesheet" href="cookie-consent.css">
   <link rel="stylesheet" href="hero-banner.css">
+  <link rel="stylesheet" href="lang-videos.css">
   <link rel="stylesheet" href="site-updates.css">
 
 </head>
@@ -33,6 +34,7 @@
       <div class="site-language-switch" role="group" aria-label="Язык сайта"><button type="button" class="site-language-btn is-selected" data-language="ru" aria-pressed="true">РУС</button><button type="button" class="site-language-btn" data-language="kk" aria-pressed="false">ҚАЗ</button></div>
       <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="nav" id="primary-navigation" aria-label="Основное меню"><a href="#guides">Видеоинструкции</a><a href="#insurers">Страховщики</a><a href="#process">Как оформить</a><a href="#faq">Вопросы</a><a class="nav-cta" href="#order">Запросить видео <span aria-hidden="true">↗</span></a></nav>
+      <div class="language-switch" role="group" aria-label="Язык сайта / Сайт тілі"><button type="button" data-site-lang="ru" class="is-active" aria-pressed="true">RU</button><button type="button" data-site-lang="kk" aria-pressed="false">ҚАЗ</button></div>
     </div>
   </header>
   <main id="main">
@@ -58,6 +60,15 @@
   <p class="guide-small">Новый закон «О рынке страхования» на 7 ноября 2026 года находится на стадии законопроекта. Мы не утверждаем, что он уже вступил в силу.</p>
   <a href="https://www.gov.kz/org/ardfm/documents/details/1067155?lang=ru" target="_blank" rel="noopener noreferrer" class="guide-source">Посмотреть проект закона на gov.kz ↗</a></div></div>
 </section>
+<section class="section guide-video-library" id="lessons" aria-labelledby="lessons-title">
+<div class="container">
+  <div class="guide-section-title"><div><span class="guide-kicker">ВИДЕОУРОКИ · БЕЙНЕСАБАҚТАР</span><h2 id="lessons-title">Пошаговое обучение.<br><em>На вашем языке.</em></h2></div><p>Выберите урок. При переключении языка сайта меняется и язык озвучки видео.</p></div>
+  <div class="localized-videos">
+    <article class="localized-video-card"><div class="localized-video-head"><span>01 / РЕГИСТРАЦИЯ</span><span class="localized-video-lang">RU</span></div><h3>Как зарегистрироваться</h3><p>Пошаговое видео по регистрации.</p><video controls playsinline preload="metadata" data-video-ru="media/registration-ru.mp4" data-video-kk="media/registration-kk.mp4" aria-label="Видео: регистрация" controlsList="nodownload"><source src="media/registration-ru.mp4" type="video/mp4">Ваш браузер не поддерживает видео.</video></article>
+    <article class="localized-video-card"><div class="localized-video-head"><span>02 / КАЗАХМЫС ОГПО</span><span class="localized-video-lang">RU</span></div><h3>ОГПО в Казахмыс</h3><p>Пошаговое видео по оформлению обязательного автострахования.</p><video controls playsinline preload="metadata" data-video-ru="media/kmic-ogpo-ru.mp4" data-video-kk="media/kmic-ogpo-kk.mp4" aria-label="Видео: оформление ОГПО Казахмыс" controlsList="nodownload"><source src="media/kmic-ogpo-ru.mp4" type="video/mp4">Ваш браузер не поддерживает видео.</video></article>
+  </div>
+  <p class="guide-shop-note" id="videoDeliveryNotice">Видеофайлы подключатся после загрузки в папку media на хостинге. Доступ к платным инструкциям должен выдаваться через защищённый личный кабинет, а не через открытые файлы.</p>
+</div></section>
 <section class="section video-store" id="guides" aria-labelledby="guides-title">
 <div class="container">
  <div class="guide-section-title"><div><span class="guide-kicker">ВИДЕОИНСТРУКЦИИ</span><h2 id="guides-title">Оформите ОГПО сами.<br><em>С понятным маршрутом.</em></h2></div><p>Выберите тему обучения. Видео объясняют последовательность действий, а не заменяют официальный сайт страховщика.</p></div>
@@ -82,38 +93,36 @@
       <div class="guide-filter-set" role="group" aria-label="Фильтр страховщиков"><button type="button" class="guide-filter is-selected" data-guide-filter="all" aria-pressed="true">Все</button><button type="button" class="guide-filter" data-guide-filter="direct" aria-pressed="false">Доступные</button><button type="button" class="guide-filter" data-guide-filter="unavailable" aria-pressed="false">Временно недоступно</button></div>
     </div>
     <div class="guide-insurer-grid" id="guideInsurerGrid">
-<article class="guide-insurer" data-name="купиполис kupipolis сентрас" data-kind="direct">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">KP</span><span class="guide-insurer-type direct">Онлайн-сервис</span></div>
-  <h3>KupiPolis</h3><p>Онлайн-сервис страховой компании «Сентрас Иншуранс». Выберите обязательное автострахование на официальном сайте сервиса.</p>
-  <a href="https://www.kupipolis.kz/ru/" target="_blank" rel="noopener noreferrer" class="guide-insurer-action">Открыть KupiPolis <span aria-hidden="true">↗</span></a>
+<article class="guide-insurer" data-name="kupipolis" data-kind="direct">
+  <div class="guide-insurer-head"><span class="guide-insurer-mark">KP</span><span class="guide-insurer-type direct">ОГПО онлайн</span></div>
+  <h3>Kupipolis</h3><p>Онлайн-оформление через сервис страховой компании «Сентрас Иншуранс».</p>
+  <a href="https://kupipolis.kz/ru/ogpo" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Перейти к оформлению — Kupipolis">Перейти к оформлению <span aria-hidden="true">↗</span></a>
   <div class="guide-insurer-domain">kupipolis.kz</div>
 </article>
-<article class="guide-insurer" data-name="казахмыс kmic" data-kind="direct">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">KM</span><span class="guide-insurer-type direct">ОГПО</span></div>
-  <h3>Казахмыс</h3><p>Официальная страница ОГПО. Инструкция по оформлению размещена в разделе видео выше.</p>
-  <a href="https://www.kmic.kz/product/Compulsory_Insurance_of_Civil_Liability_of_Vehicle_Owners_for_individuals" target="_blank" rel="noopener noreferrer" class="guide-insurer-action">Открыть ОГПО <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">kmic.kz</div>
+<article class="guide-insurer" data-name="казахмыс" data-kind="direct">
+  <div class="guide-insurer-head"><span class="guide-insurer-mark">К</span><span class="guide-insurer-type direct">ОГПО онлайн</span></div>
+  <h3>Казахмыс</h3><p>Прямой переход в сервис оформления ОГПО страховой компании «Казахмыс».</p>
+  <a href="https://online.kmic.kz/ogpoauto" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Перейти к оформлению — Казахмыс">Перейти к оформлению <span aria-hidden="true">↗</span></a>
+  <div class="guide-insurer-domain">online.kmic.kz</div>
 </article>
-<article class="guide-insurer" data-name="nomad nomad insurance номад" data-kind="direct">
+<article class="guide-insurer" data-name="nomad insurance" data-kind="direct">
   <div class="guide-insurer-head"><span class="guide-insurer-mark">NI</span><span class="guide-insurer-type direct">Личный кабинет</span></div>
-  <h3>Nomad Insurance</h3><p>Перейдите в официальный личный кабинет страховщика для самостоятельного оформления.</p>
-  <a href="https://cabinet.nomad.kz/" target="_blank" rel="noopener noreferrer" class="guide-insurer-action">Открыть кабинет <span aria-hidden="true">↗</span></a>
-  <div class="guide-insurer-domain">nomad.kz</div>
+  <h3>Nomad Insurance</h3><p>Оформление полиса через официальный личный кабинет Nomad Insurance.</p>
+  <a href="https://cabinet.nomad.kz/" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Открыть кабинет — Nomad Insurance">Открыть кабинет <span aria-hidden="true">↗</span></a>
+  <div class="guide-insurer-domain">cabinet.nomad.kz</div>
 </article>
-<article class="guide-insurer" data-name="amanat аманат" data-kind="direct">
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">AM</span><span class="guide-insurer-type direct">ОГПО</span></div>
-  <h3>Amanat</h3><p>Официальная страница самостоятельного онлайн-оформления ОГПО.</p>
-  <a href="https://amanat24.kz/buy-ogpo" target="_blank" rel="noopener noreferrer" class="guide-insurer-action">Перейти к оформлению <span aria-hidden="true">↗</span></a>
+<article class="guide-insurer" data-name="amanat" data-kind="direct">
+  <div class="guide-insurer-head"><span class="guide-insurer-mark">A</span><span class="guide-insurer-type direct">ОГПО онлайн</span></div>
+  <h3>Amanat</h3><p>Оформление полиса ОГПО на официальном сайте страховой компании Amanat.</p>
+  <a href="https://amanat24.kz/buy-ogpo" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Перейти к оформлению — Amanat">Перейти к оформлению <span aria-hidden="true">↗</span></a>
   <div class="guide-insurer-domain">amanat24.kz</div>
 </article>
-<article class="guide-insurer guide-insurer-unavailable" data-name="interteach интертич интертеч" data-kind="unavailable">
-  <div class="insurer-stamp" role="status">БАЗА ВРЕМЕННО НЕ РАБОТАЕТ</div>
-  <div class="guide-insurer-head"><span class="guide-insurer-mark">IT</span><span class="guide-insurer-type home">Временно недоступно</span></div>
-  <h3>Interteach</h3><p>По информации владельца Fast Insurance, база оформления временно не работает. Статус не подтверждён страховщиком.</p>
-  <a href="https://www.interteach.kz/ru" target="_blank" rel="noopener noreferrer" class="guide-insurer-action">Официальный сайт <span aria-hidden="true">↗</span></a>
+<article class="guide-insurer guide-insurer-paused" data-name="interteach" data-kind="offline">
+  <div class="guide-insurer-head"><span class="guide-insurer-mark">IT</span><span class="guide-insurer-type offline">База временно не работает</span></div>
+  <h3>Interteach</h3><p>Временно отмечен как недоступный для онлайн-оформления. Уточняйте восстановление сервиса у страховщика.</p>
+  <a href="https://www.interteach.kz/ru" target="_blank" rel="noopener noreferrer" class="guide-insurer-action" aria-label="Официальный сайт — Interteach">Официальный сайт <span aria-hidden="true">↗</span></a>
   <div class="guide-insurer-domain">interteach.kz</div>
-</article>
-</div>
+</article></div>
     <p id="guideEmpty" class="guide-empty" hidden>По вашему запросу страховщик не найден.</p>
     <div class="guide-insurer-clarity"><strong>Обратите внимание</strong><p>KupiPolis — сервис Сентрас Иншуранс, а не отдельная страховая компания. Ссылки не означают партнёрство с Fast Insurance Online. Доступность отдельных страховых сервисов может меняться.</p><a href="https://www.gov.kz/org/ardfm/financial-organizations/25?lang=ru" target="_blank" rel="noopener noreferrer">Официальный реестр АРРФР ↗</a></div>
   </div>
@@ -131,12 +140,13 @@
 <details><summary>Могу ли я оформить ОГПО без покупки видео?</summary><p>Да. Вы можете бесплатно перейти к страховой компании из каталога и оформить полис самостоятельно. Покупка инструкции необязательна.</p></details>
 <details><summary>Можно ли ввести ИИН и SMS-код на Fast Insurance Online?</summary><p>Нет. На нашем сайте такие сведения не запрашиваются. Вводите их только в официальной системе выбранной страховой компании и проверяйте, кому предоставляете согласие.</p></details>
 <details><summary>Новый закон уже вступил в силу?</summary><p>На 7 ноября 2026 года опубликованный новый закон «О рынке страхования» находится в статусе проекта. Порядок дальнейшего принятия и дата вступления в силу уточняются по официальным источникам.</p></details>
-<details><summary>Почему некоторые ссылки ведут на главную страницу страховщика?</summary><p>Мы не нашли подтверждённую публичную форму для каждой компании. В таких случаях открывается официальный ресурс без ложного обещания прямого оформления.</p></details>
+<details><summary>Почему Interteach отмечен как недоступный?</summary><p>По информации владельца сайта, база Interteach временно не работает. Это не подтверждено официальным сообщением страховщика; проверяйте актуальный статус на официальном сайте.</p></details>
 </div></div></section>
 </main>
   
 <footer class="footer"><div class="container"><div class="footer-main"><div class="footer-brand"><a href="#top" class="brand"><span class="brand-mark" aria-hidden="true">F↗</span><span class="brand-copy"><strong>FAST<span class="brand-accent">.</span></strong><small>INSURANCE ONLINE</small></span></a><p>Видеоинструкции и каталог официальных страховщиков Казахстана.</p></div><div class="footer-links"><span>РАЗДЕЛЫ</span><a href="#guides">Видеоинструкции</a><a href="#insurers">Страховые компании</a><a href="#process">Как оформить</a><a href="#faq">Вопросы</a></div><div class="footer-links"><span>ОФИЦИАЛЬНЫЕ ИСТОЧНИКИ</span><a href="https://www.gov.kz/situations/15/62" target="_blank" rel="noopener noreferrer">Оформление ОГПО на gov.kz ↗</a><a href="https://www.gov.kz/org/ardfm/financial-organizations/25?lang=ru" target="_blank" rel="noopener noreferrer">Реестр страховщиков ↗</a><a href="https://id.mkb.kz/" target="_blank" rel="noopener noreferrer">Проверка полиса ↗</a></div></div><div class="footer-disclaimer"><p><a href="privacy.html">Политика конфиденциальности и cookie</a> · <button type="button" class="cookie-settings-link" data-cookie-settings>Настройки cookie</button></p><strong>Правовая информация</strong><p>Fast Insurance Online — независимый информационный сервис. Мы не являемся страховой компанией, не представляем перечисленные компании без отдельных договорных оснований и не принимаем страховые премии. Оформление, идентификация, оплата и выдача полиса выполняются на официальных ресурсах страховщиков. Указание компании в каталоге не означает партнёрства.</p><p>Видеоинструкции — самостоятельный информационный продукт, не страховая услуга. Сведения о продавце, правила приобретения, точные цены, условия доступа и возврата должны быть опубликованы до запуска приёма платежей. Данные клиентов и коды подтверждения на этом сайте не собираются.</p></div><div class="footer-bottom"><span>© <span id="year">2026</span> Fast Insurance Online</span><span>Каталог выбранных площадок · ноябрь 2026</span><a href="#top">Наверх ↑</a></div></div></footer>
 <script src="guide-shop.js" defer></script>
+<script src="lang-videos.js" defer></script>
 <script src="cookie-consent.js" defer></script>
 <script src="site-language.js" defer></script>
 </body></html>
